@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+/* Scrollbar styling for columns */
+.kanban-column::-webkit-scrollbar {
+  width: 6px;
+}
+.kanban-column::-webkit-scrollbar-track {
+  background: transparent;
+}
+.kanban-column::-webkit-scrollbar-thumb {
+  background-color: #cbd5e1;
+  border-radius: 3px;
+}
