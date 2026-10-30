@@ -1,8 +1,8 @@
 import {
   Calendar,
   ChevronRight,
-  Edit3,
-  MoreVertical,
+  EllipsisVertical,
+  Pencil,
   Trash2,
 } from 'lucide-react'
 import { useState } from 'react'
@@ -63,7 +63,7 @@ export default function TaskCard({ task, onEdit, onDelete, onMove }) {
             onClick={() => setMenuOpen(!menuOpen)}
             className="p-1 rounded hover:bg-gray-100 opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer"
           >
-            <MoreVertical size={14} className="text-gray-400" />
+            <EllipsisVertical size={14} className="text-gray-400" />
           </button>
 
           {menuOpen && (
@@ -80,7 +80,7 @@ export default function TaskCard({ task, onEdit, onDelete, onMove }) {
                   }}
                   className="w-full flex items-center gap-2 px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 cursor-pointer"
                 >
-                  <Edit3 size={14} />
+                  <Pencil size={14} />
                   Edit
                 </button>
                 {otherStatuses.map((s) => (

@@ -1,9 +1,10 @@
+import { CircleCheck, ListTodo, Loader } from 'lucide-react'
 import Column from './Column'
 
 const COLUMNS = [
-  { id: 'todo', title: 'Todo', color: 'bg-amber-500' },
-  { id: 'inprogress', title: 'In Progress', color: 'bg-blue-500' },
-  { id: 'completed', title: 'Completed', color: 'bg-emerald-500' },
+  { id: 'todo', title: 'Todo', icon: ListTodo, iconColor: 'text-amber-500' },
+  { id: 'inprogress', title: 'In Progress', icon: Loader, iconColor: 'text-blue-500' },
+  { id: 'completed', title: 'Completed', icon: CircleCheck, iconColor: 'text-emerald-500' },
 ]
 
 export default function Board({

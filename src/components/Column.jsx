@@ -1,5 +1,5 @@
-import TaskCard from './TaskCard'
-import EmptyState from './EmptyState'
+import TaskCard from "./TaskCard";
+import EmptyState from "./EmptyState";
 
 export default function Column({
   column,
@@ -9,11 +9,12 @@ export default function Column({
   onMoveTask,
   searchQuery,
 }) {
+  const Icon = column.icon;
   return (
-    <div className="bg-gray-100 rounded-xl p-4 flex flex-col min-h-[300px]">
+    <div className="bg-gray-100 rounded-xl p-4 flex flex-col overflow-y-auto max-h-[300px]">
       <div className="flex items-center justify-between mb-4">
         <div className="flex items-center gap-2">
-          <div className={`w-3 h-3 rounded-full ${column.color}`} />
+          <Icon size={18} className={column.iconColor} />
           <h2 className="font-semibold text-gray-700 text-sm uppercase tracking-wide">
             {column.title}
           </h2>
@@ -42,5 +43,5 @@ export default function Column({
         )}
       </div>
     </div>
-  )
+  );
 }

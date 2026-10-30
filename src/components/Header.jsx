@@ -1,4 +1,4 @@
-import { Plus, Search, SlidersHorizontal } from 'lucide-react'
+import { Plus, Search, SlidersHorizontal, SquareKanban } from 'lucide-react'
 
 export default function Header({
   searchQuery,
@@ -15,7 +15,7 @@ export default function Header({
         <div className="flex items-center justify-between py-4">
           <div className="flex items-center gap-3">
             <div className="w-8 h-8 bg-indigo-500 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">K</span>
+              <SquareKanban size={18} className="text-white" />
             </div>
             <h1 className="text-xl font-bold text-gray-900">Kanban Board</h1>
           </div>
@@ -52,9 +52,9 @@ export default function Header({
               className="px-3 py-2 border border-gray-300 rounded-lg text-sm bg-white focus:outline-none focus:ring-2 focus:ring-indigo-500 cursor-pointer"
             >
               <option value="all">All Priorities</option>
-              <option value="high">🔴 High</option>
-              <option value="medium">🟡 Medium</option>
-              <option value="low">🟢 Low</option>
+              <option value="high">High</option>
+              <option value="medium">Medium</option>
+              <option value="low">Low</option>
             </select>
 
             <select
@@ -63,9 +63,9 @@ export default function Header({
               className="px-3 py-2 border border-gray-300 rounded-lg text-sm bg-white focus:outline-none focus:ring-2 focus:ring-indigo-500 cursor-pointer"
             >
               <option value="all">All Statuses</option>
-              <option value="todo">📋 Todo</option>
-              <option value="inprogress">🔄 In Progress</option>
-              <option value="completed">✅ Completed</option>
+              <option value="todo">Todo</option>
+              <option value="inprogress">In Progress</option>
+              <option value="completed">Completed</option>
             </select>
           </div>
         </div>
