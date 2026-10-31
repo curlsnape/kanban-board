@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+*{
+  font-family: inter;
+}
+
 /* Scrollbar styling for columns */
 .kanban-column::-webkit-scrollbar {
   width: 6px;
